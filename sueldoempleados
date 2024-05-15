@@ -1,0 +1,20 @@
+sueldoinferior=int(0)
+sueldosuperior=int(0)
+cantidadtotal=int(0)
+n=int(input("Ingrese el sueldo del empleado: "))
+while n>-1:
+    if n>499999 and n<15000001:
+        cantidadtotal=cantidadtotal+n
+        if n>899999:
+            sueldosuperior=sueldosuperior+1
+        else:
+            if n>499999 and n<900000:
+                sueldoinferior=sueldoinferior+1
+        n=int(input("Ingrese el sueldo del empleado: "))
+    else:
+        print("Sueldo inválido. Vuelva a ingresar un sueldo: ")
+        n=int(input("Ingrese el sueldo del empleado: "))
+    
+print("La cantidad de empleados que cobran menos de 900.000 es de:", sueldoinferior)
+print("La cantidad de empleados que cobran 900.000 o más es de:", sueldosuperior)
+print("El total de dinero destinado al sueldo de los empleados es de:", cantidadtotal)
