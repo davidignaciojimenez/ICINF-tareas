@@ -1,0 +1,5 @@
+nombre1=input("Ingrese un nombre de pila: ")
+nombre2=input("Ingrese un nombre distinto: ")
+listanombres=(nombre1,nombre2)
+listaordenada=sorted(listanombres)
+print(listaordenada)
